@@ -1,0 +1,48 @@
+.App {
+    display: grid;
+    grid-template-rows: 15% 70% 15%;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.App img {
+    max-width: 60vw;
+    max-height: 60vh;
+    border: 2px inset purple;
+}
+
+.btn__container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.btn__container button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px #000;
+}
+
+.btn_gerar {
+    background: rgb(205, 133, 0);
+}
+
+.btn_baixar {
+    background: rgb(150, 1, 172);
+}
+
+@media (max-width: 764px) {
+    .App img {
+        max-width: 80vw;
+        max-height: 80vh;
+    }
+}
